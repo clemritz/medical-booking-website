@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import About from "../components/About/About"
 
 import teacherImage from "../assets/images/teacher.png";
 import icon01 from "../assets/images/icon01.png";
 import icon02 from "../assets/images/icon02.png";
 import icon03 from "../assets/images/icon03.png";
+import 'aos/dist/aos.css'; // Import the AOS styles
+import AOS from 'aos'; // Import the AOS library
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       {/* Hero section start */}
@@ -31,7 +38,7 @@ const Home = () => {
 
               {/* Hero counter */}
               <div className="mt-[30px] lg:mt-[45px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]">
-                <div>
+                <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="200">
                   <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
                     30+
                   </h2>
@@ -39,7 +46,7 @@ const Home = () => {
                   <p className="text__para">Years of Experience</p>
                 </div>
 
-                <div>
+                <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">
                   <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
                     9800+
                   </h2>
@@ -47,7 +54,7 @@ const Home = () => {
                   <p className="text__para">Teachers</p>
                 </div>
 
-                <div>
+                <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="400">
                   <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
                     98%
                   </h2>
@@ -98,7 +105,7 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]">
             {/* ICON 1 */}
-            <div className="py-[30px] px-5">
+            <div className="py-[30px] px-5" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="200">
               <div className="flex items-center justify-center">
                 <img src={icon01} alt="A person offering help to someone" />
               </div>
@@ -122,7 +129,7 @@ const Home = () => {
             </div>
 
             {/* ICON 2 */}
-            <div className="py-[30px] px-5">
+            <div className="py-[30px] px-5" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="500">
               <div className="flex items-center justify-center">
                 <img src={icon02} alt="A person offering help to someone" />
               </div>
@@ -146,7 +153,7 @@ const Home = () => {
             </div>
 
             {/* ICON 3 */}
-            <div className="py-[30px] px-5">
+            <div className="py-[30px] px-5" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="700">
               <div className="flex items-center justify-center">
                 <img src={icon03} alt="A person offering help to someone" />
               </div>
@@ -171,6 +178,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* About section start */}
+      <About />
+      {/* About section end */}
     </>
   );
 };
