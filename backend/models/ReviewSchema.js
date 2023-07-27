@@ -2,9 +2,9 @@ import mongoose from "mongoose";
 
 const reviewSchema = new mongoose.Schema(
   {
-    doctor: {
+    teacher: {
       type: mongoose.Types.ObjectId,
-      ref: "Doctor",
+      ref: "Teacher",
     },
     user: {
       type: mongoose.Types.ObjectId,

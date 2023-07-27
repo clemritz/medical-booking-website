@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/teacherlogo.png";
 import userImage from "../../assets/images/avatar-icon.png";
 import { NavLink, Link } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
@@ -10,8 +10,8 @@ const navLinks = [
     display: "Home",
   },
   {
-    path: "/doctors",
-    display: "Find a Doctor",
+    path: "/teachers",
+    display: "Find a Teacher",
   },
   {
     path: "/Services",
@@ -53,7 +53,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div>
-            <img src={logo} alt="blue cross and 'medical' text" />
+            <img src={logo} alt="Teacher's logo" className="w-36" />
           </div>
 
           {/* Menu */}
