@@ -1,6 +1,6 @@
 import React from "react";
 
-import heroImg01 from "../assets/images/teacher.png";
+import teacherImage from "../assets/images/teacher.png";
 
 const Home = () => {
   return (
@@ -55,19 +55,19 @@ const Home = () => {
             <div className="flex gap-[30px] justify-end">
               <div>
                 <img
-                  src={heroImg01}
+                  src={teacherImage}
                   alt="Teacher"
                   className="w-80 rounded-lg"
                 />
               </div>
               <div className="mt-[30px]">
                 <img
-                  src={heroImg01}
+                  src={teacherImage}
                   alt="Teacher"
                   className="mb-[30px] w-36 rounded-lg"
                 />
                 <img
-                  src={heroImg01}
+                  src={teacherImage}
                   alt="Teacher"
                   className="w-36 rounded-lg"
                 />
