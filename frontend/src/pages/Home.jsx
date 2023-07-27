@@ -9,6 +9,7 @@ import 'aos/dist/aos.css'; // Import the AOS styles
 import AOS from 'aos'; // Import the AOS library
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
+import ServiceList from '../components/Services/ServiceList';
 
 const Home = () => {
   useEffect(() => {
@@ -40,7 +41,7 @@ const Home = () => {
               <div className="mt-[30px] lg:mt-[45px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]">
                 <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="200">
                   <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
-                    30+
+                    10+
                   </h2>
                   <span className="w-[100px] h-2 bg-yellowBgColor rounded-full block mt-[-14px]"></span>
                   <p className="text__para">Years of Experience</p>
@@ -179,9 +180,26 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About section start */}
       <About />
-      {/* About section end */}
+
+      {/* Subject section start */}
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">
+              Our Subjects
+            </h2>
+            <p className="text__para text-center">
+              Unlock your full academic potential with exceptional tutoring. Our
+              platform connects you with the finest educators for personalized
+              learning.
+            </p>
+          </div>
+
+          <ServiceList />
+        </div>
+      </section>
+      {/* Subject section end */}
     </>
   );
 };
