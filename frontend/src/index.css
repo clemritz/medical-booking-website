@@ -10,11 +10,11 @@
 
 @layer components {
   .container {
-    @apply max-w-full w-[1440px] px-5 mx-auto;
+    @apply max-w-full w-[1440px] px-20 mx-auto;
   }
 
   .btn {
-    @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px];
+    @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[25px];
   }
 
   .heading {
@@ -27,6 +27,10 @@
 
   .header {
     @apply bg-[url('./assets/images/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[100px];
+  }
+
+  .hero__section {
+    @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover
   }
 }
 
