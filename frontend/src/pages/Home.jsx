@@ -13,6 +13,7 @@ import AOS from "aos"; // Import the AOS library
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import ServiceList from "../components/Services/ServiceList";
+import TeacherList from "../components/Teachers/TeacherList";
 
 const Home = () => {
   useEffect(() => {
@@ -294,6 +295,21 @@ const Home = () => {
         </div>
       </section>
       {/* Feature section end */}
+      {/* Teacher's section start */}
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">Our great Teachers</h2>
+            <p className="text__para text-center">
+              Unlock your full academic potential with exceptional tutoring. Our
+              platform connects you with the finest educators for personalized
+              learning.
+            </p>
+          </div>
+          <TeacherList />
+        </div>
+      </section>
+      {/* Teacher's section end */}
     </>
   );
 };
