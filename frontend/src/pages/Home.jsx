@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import About from "../components/About/About";
 
 import teacherImage from "../assets/images/teacher.png";
-import icon01 from "../assets/images/icon01.png";
-import icon02 from "../assets/images/icon02.png";
-import icon03 from "../assets/images/icon03.png";
+import icon01 from "../assets/images/illustration1.png";
+import icon02 from "../assets/images/illustration2.png";
+import icon03 from "../assets/images/illustration3.png";
 import featureImg from "../assets/images/feature-img2.jpeg";
 import videoImg from "../assets/images/video-icon.png";
 import avatarIcon from "../assets/images/avatar-icon2.jpeg";
@@ -107,6 +107,7 @@ const Home = () => {
       </section>
       {/* Hero section end */}
 
+      {/* How it works section start */}
       <section>
         <div className="container">
           <div className="lg:w-[470px] mx-auto">
@@ -210,6 +211,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* How it works section end */}
 
       <About />
 
@@ -295,6 +297,7 @@ const Home = () => {
         </div>
       </section>
       {/* Feature section end */}
+
       {/* Teacher's section start */}
       <section>
         <div className="container">
@@ -311,7 +314,7 @@ const Home = () => {
       </section>
       {/* Teacher's section end */}
     </>
-  );
+  );gi
 };
 
 export default Home;

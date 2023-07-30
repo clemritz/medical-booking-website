@@ -11,7 +11,7 @@ export const teachers = [
     totalRating: 186,
     photo: tutorImg02,
     totalStudents: 80,
-    school: "Victor Hugo High School, Paris.",
+    city: "Paris",
   },
   {
     id: "02",
@@ -21,7 +21,7 @@ export const teachers = [
     totalRating: 142,
     photo: tutorImg01,
     totalStudents: 60,
-    school: "Louis Pasteur High School, Lyon.",
+    city: "London",
   },
   {
     id: "03",
@@ -31,6 +31,6 @@ export const teachers = [
     totalRating: 198,
     photo: tutorImg03,
     totalStudents: 75,
-    school: "Jeanne d'Arc High School, Marseille.",
+    city: "Marseille",
   },
 ];
