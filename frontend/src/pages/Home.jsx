@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-      {/* Hero section start */}
+      {/*----- Hero section start ----*/}
       <section className="hero__section pt-[60px] 2xl:h-[800px]">
         <div className="container">
           <div className="flex flex-col lg:flex-row gap-[90px] items-center justify-between">
@@ -105,9 +105,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* Hero section end */}
+      {/*----- Hero section end -----*/}
 
-      {/* How it works section start */}
+      {/*----- How it works section start -----*/}
       <section>
         <div className="container">
           <div className="lg:w-[470px] mx-auto">
@@ -211,11 +211,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* How it works section end */}
+      {/*----- How it works section end -----*/}
 
       <About />
 
-      {/* Subject section start */}
+      {/*----- Subject section start -----*/}
       <section>
         <div className="container">
           <div className="xl:w-[470px] mx-auto">
@@ -230,9 +230,9 @@ const Home = () => {
           <ServiceList />
         </div>
       </section>
-      {/* Subject section end */}
+      {/*----- Subject section end -----*/}
 
-      {/* Feature section start */}
+      {/*----- Feature section start -----*/}
       <section>
         <div className="container">
           <div className="flex items-center justify-between flex-col lg:flex-row">
@@ -296,9 +296,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* Feature section end */}
+      {/*----- Feature section end -----*/}
 
-      {/* Teacher's section start */}
+      {/*----- Teacher's section start -----*/}
       <section>
         <div className="container">
           <div className="xl:w-[470px] mx-auto">
@@ -312,9 +312,9 @@ const Home = () => {
           <TeacherList />
         </div>
       </section>
-      {/* Teacher's section end */}
+      {/*----- Teacher's section end -----*/}
     </>
-  );gi
+  );
 };
 
 export default Home;
