@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import About from "../components/About/About";
 
 import teacherImage from "../assets/images/teacher.png";
@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import ServiceList from "../components/Services/ServiceList";
 import TeacherList from "../components/Teachers/TeacherList";
+import Testimonial from "../components/Testimonial/Testimonial";
 
 const Home = () => {
   useEffect(() => {
@@ -317,6 +318,19 @@ const Home = () => {
       {/*----- Teacher's section end -----*/}
 
       {/*----- Testimonial section start -----*/}
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">What our student say</h2>
+            <p className="text__para text-center">
+              Unlock your full academic potential with exceptional tutoring. Our
+              platform connects you with the finest educators for personalized
+              learning.
+            </p>
+          </div>
+          <Testimonial />
+        </div>
+      </section>
       {/*----- Testimonial section end -----*/}
     </>
   );
