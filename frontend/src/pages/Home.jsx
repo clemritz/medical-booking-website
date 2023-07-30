@@ -315,6 +315,9 @@ const Home = () => {
         </div>
       </section>
       {/*----- Teacher's section end -----*/}
+
+      {/*----- Testimonial section start -----*/}
+      {/*----- Testimonial section end -----*/}
     </>
   );
 };
