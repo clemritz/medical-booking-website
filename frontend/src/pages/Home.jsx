@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import About from "../components/About/About";
 
 import teacherImage from "../assets/images/teacher.png";
+import teacherImage2 from "../assets/images/profile3.jpeg";
+import teacherImage3 from "../assets/images/profile2.png";
 import icon01 from "../assets/images/illustration1.png";
 import icon02 from "../assets/images/illustration2.png";
 import icon03 from "../assets/images/illustration3.png";
@@ -91,12 +93,12 @@ const Home = () => {
               </div>
               <div className="mt-[30px]">
                 <img
-                  src={teacherImage}
+                  src={teacherImage2}
                   alt="Teacher"
                   className="mb-[30px] w-36 rounded-lg"
                 />
                 <img
-                  src={teacherImage}
+                  src={teacherImage3}
                   alt="Teacher"
                   className="w-36 rounded-lg"
                 />
